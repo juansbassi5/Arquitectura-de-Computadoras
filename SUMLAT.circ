@@ -97,7 +97,7 @@
     <comp lib="0" loc="(660,180)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="carry"/>
+      <a name="label" val="c8"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(800,190)" name="Splitter">
@@ -378,7 +378,7 @@
     <comp lib="0" loc="(1090,60)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="label" val="s8"/>
+      <a name="label" val="c8"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1230,200)" name="Tunnel">
@@ -972,7 +972,11 @@
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="0" loc="(1510,890)" name="Constant">
+    <comp lib="0" loc="(1540,1010)" name="Constant">
+      <a name="value" val="0x37"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(1600,890)" name="Constant">
       <a name="value" val="0x30"/>
       <a name="width" val="8"/>
     </comp>
@@ -999,7 +1003,7 @@
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="2" loc="(1560,880)" name="Multiplexer">
+    <comp lib="2" loc="(1640,880)" name="Multiplexer">
       <a name="width" val="8"/>
     </comp>
     <comp lib="2" loc="(540,370)" name="Multiplexer">
@@ -1008,7 +1012,7 @@
     <comp lib="2" loc="(620,200)" name="Multiplexer">
       <a name="select" val="3"/>
     </comp>
-    <comp lib="3" loc="(1660,890)" name="Comparator"/>
+    <comp lib="3" loc="(1590,1000)" name="Comparator"/>
     <comp lib="4" loc="(750,200)" name="Counter">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
@@ -1065,9 +1069,14 @@
     <wire from="(1470,830)" to="(1470,900)"/>
     <wire from="(1470,830)" to="(1480,830)"/>
     <wire from="(1500,840)" to="(1500,870)"/>
-    <wire from="(1500,870)" to="(1530,870)"/>
-    <wire from="(1510,890)" to="(1530,890)"/>
-    <wire from="(1560,880)" to="(1580,880)"/>
+    <wire from="(1500,870)" to="(1520,870)"/>
+    <wire from="(1520,870)" to="(1520,990)"/>
+    <wire from="(1520,870)" to="(1610,870)"/>
+    <wire from="(1520,990)" to="(1550,990)"/>
+    <wire from="(1540,1010)" to="(1550,1010)"/>
+    <wire from="(1590,1000)" to="(1620,1000)"/>
+    <wire from="(1600,890)" to="(1610,890)"/>
+    <wire from="(1620,900)" to="(1620,1000)"/>
     <wire from="(380,330)" to="(440,330)"/>
     <wire from="(380,380)" to="(380,390)"/>
     <wire from="(380,380)" to="(440,380)"/>
